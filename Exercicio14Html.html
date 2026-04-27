@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 14 - HTML Formulários</title>
+</head>
+<body>
+    <h1>Exemplo 14 - HTML Formulários - Elementos Input</h1>
+    <form action="paginadestino.php" method="get">
+        <fieldset>
+            <legend>Exemplo 14 Formulários</legend>
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="TxtNome" id="TxtNome" required>
+            </div>
+            <div>
+                <label for="">Selecione uma cor</label>
+                <input type="color" name="Txtcor" id="Txtcor" required>
+            </div>
+            <div>
+                <label for="">Digite o ano do seu nascimento</label>
+                <input type="number" name="TxtAnoNascimento" id="TxtAnoNascimento" required, min="1900" max="2050" step="1">
+            </div>
+            <div>
+                <label for="">Ano do Nascimento usando Range</label>
+                <input type="range" name="TxtAnoDeNascimentoRange" id="TxtAnoDeNascimentoRange" required, min="1900" max="2050" step="10">
+            </div>
+            <div>
+                <label for="">Digite o Horario do seu Compromisso</label>
+                <input type="time" name="TxtHorarioCompromisso" id="TxtHorarioCompromisso">
+            </div>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

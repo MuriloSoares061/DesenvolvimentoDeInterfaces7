@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 17 - HTML Formulários - Elementos Input</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Cadastro Pessoal</legend>
+            <div>
+                <label for="">Nome Completo</label>
+                <input type="text" name="txtNomeCompleto" id="txtNomeCompleto" required maxlength="100">
+            </div>
+            <br>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="TxtEmail" id="TxtEmail" required placeholder="email@gmail.com" maxlength="100">
+            </div>
+            <br>
+            <div>
+                <label for="">Digite o ano do Nascimento</label>
+                <input type="number" name="" id="" autofocus required maxlength="100" min="1900" max="2050" step=>
+            </div>
+            <br>
+            <div>
+                <label for="">Digite a Data do seu Nascimento</label>
+                <input type="date" name="" id="" autofocus required maxlength="100" max="2026-03-31">
+            </div>
+            <br>
+            <div>
+                <label for="">Digite o Horario do seu Compromisso</label>
+                <input type="time" name="TxtHorarioCompromisso" id="TxtHorarioCompromisso">
+            </div>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

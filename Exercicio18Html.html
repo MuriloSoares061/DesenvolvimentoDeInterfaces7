@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 18 - HTML Formulários - Elementos Input</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Preferências Do Aluno</legend>
+            <div>
+                <label for="">Nome Completo</label><br>
+                <input type="text" name="txtNomeCompleto" id="txtNomeCompleto" required maxlength="100">
+            </div>
+            <br>
+            <div>
+                <label for="">Selecione uma cor</label> <br>
+                <input type="color" name="Txtcor" id="Txtcor" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Digite as Disciplinas do seu Interesse</label> <br>
+                <input type="checkbox" name="chkGenero" id="chkGenero" value="1"> Algebra <br>
+                <input type="checkbox" name="chkGenero" id="chkGenero" value="2"> Logica de Programção <br>
+                <input type="checkbox" name="chkGenero" id="chkGenero" value="3"> Desenvolvimento de Software <br>
+                <input type="checkbox" name="chkGenero" id="chkGenero" value="4"> Engenharia de Software <br>
+                <input type="checkbox" name="chkGenero" id="chkGenero" value="5"> Banco de Dados <br>
+                <input type="checkbox" name="chkGenero" id="chkGenero" value="6"> Todas acima <br>
+            </div>
+            <br>
+            <div>
+                <label for="">Digite o seu Turno</label> <br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="0"> Matutino <br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="1"> Vespentino <br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="2"> Noturno <br>
+            </div>
+            <br>
+            <div>
+                <label for="">Curso Favorito</label>
+                <select name="cboEstadocivil" id="cboEstadoCivil">
+                <option value="1">Algebra</option>
+                <option value="2">Logica de Programação</option>
+                <option value="3">Desenvolvimento de Software</option>
+                <option value="4">Engenharia de Software</option>
+                <option value="5">Banco de Dados</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Interesse em Html</label>
+                <input type="range" name="TxtInteresseHtmlRange" id="TxtInteresseHtmlRange" required, min="1" max="5" step="0">
+            </div>
+            <br>
+            <button>Enviar</button>
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
